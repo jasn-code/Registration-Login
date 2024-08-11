@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120vh;
+            background-image: url('Images/download.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            justify-content: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: calc(100% - 10px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        select {
+            appearance: none;
+        }
+
+        span.error {
+            color: red;
+            font-size: 0.8em;
+            margin-top: 5px;
+            display: block;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .checkbox-label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+       
+
+    </style>
+ 
+</head>
+<body>
+    <form name="form1" action="welcome.html">
+        <label>Name: <input type="text" id="textname"></label>
+        <span id="Error1"></span><br><br>
+
+        <label>Password: <input type="password" id="passwd"></label>
+        <span id="Error2"></span><br><br>
+
+        <label>Confirm Password: <input type="password" id="confirmpasswd"></label>
+        <span id="Error3"></span><br><br>
+       
+        <label>Address: <input type="text" id="address"></label>
+        <span id="Error4"></span><br><br>
+
+        <select id="selectCity">
+            <option value="-1">Select a City</option>
+            <option value="brm">Brampton</option>
+            <option value="cal">Calgary</option>
+            <option value="cal">Toronto</option>
+        </select> <span id="err"></span><br><br>
+
+        <input type="checkbox" value="Agree" id="chkbox">
+        <label for="chkbox">English</label>
+        <span id="agreeErr"></span><br>
+
+        <input type="checkbox" value="Agree" id="chkbox2">
+        <label for="chkbox2">Non-English</label>
+        <span id="agreeErr"></span><br><br>
+
+        <input type="submit" value="Register">
+</form>
+     <script src="_scripts/scripts.js">
+     </script>
+</body>
+</html>
